@@ -102,7 +102,6 @@ replicaset.apps/argo-rollouts-6f6b9bd669   1         1         1       18m
 ```
 [user@kub-app001 ~]$ wget  https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64
 --2021-01-08 06:18:43--  https://github-production-release-asset-2e65be.s3.amazonaws.com/158012967/8363d100-406a-11eb-98fd-e4d86ac3b339?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210108T061843Z&X-Amz-Expires=300&X-Amz-Signature=e641acc1d453fa34e8411f608c12ddc4bc042f49e294aa5a6f0af19a8545cb65&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=158012967&response-content-disposition=attachment%3B%20filename%3Dkubectl-argo-rollouts-linux-amd64&response-content-type=application%2Foctet-stream
-Connecting to lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)|10.164.246.138|:8080... connected.
 Proxy request sent, awaiting response... 200 OK
 Length: 48541136 (46M) [application/octet-stream]
 Saving to: ‘kubectl-argo-rollouts-linux-amd64’
@@ -141,7 +140,6 @@ Download rollout.yaml & service.yaml files
 [user@kub-app001 kubernetes]$ wget  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
 --2021-01-08 06:24:38--  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
 Resolving lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)... 10.164.246.138
-Connecting to lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)|10.164.246.138|:8080... connected.
 Proxy request sent, awaiting response... 200 OK
 Length: 752 [text/plain]
 Saving to: ‘rollout.yaml’
@@ -154,7 +152,6 @@ Saving to: ‘rollout.yaml’
 [user@kub-app001 kubernetes]$ wget https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 --2021-01-08 06:24:56--  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 Resolving lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)... 10.164.246.138
-Connecting to lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)|10.164.246.138|:8080... connected.
 Proxy request sent, awaiting response... 200 OK
 Length: 178 [text/plain]
 Saving to: ‘service.yaml’
