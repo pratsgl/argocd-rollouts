@@ -38,13 +38,15 @@ Features
    -  kubectl with argo-rollouts plugin installed (see install guide)
       	*	https://argoproj.github.io/argo-rollouts/installation/#kubectl-plugin-installation
 
-### Install argo-rollouts controller on K8s Cluster
----------------------
+### Install argo-rollouts
 
+#### Create argo-rollouts namespace
 ```	
 [user@kub-app001 ~]$ kubectl create namespace argo-rollouts
 namespace/argo-rollouts created
-
+```
+### Download manifest install.yaml 
+```
 [user@kub-app001 ~]$ wget  https://raw.githubusercontent.com/argoproj/argo-rollouts/stable/manifests/install.yaml
 --2021-01-08 06:12:51--  https://raw.githubusercontent.com/argoproj/argo-rollouts/stable/manifests/install.yaml
 Resolving lab-api-proxy.dalab.mycompany.com (lab-api-proxy.dalab.mycompany.com)... 10.164.246.138
@@ -130,8 +132,7 @@ kubectl-argo-rollouts: v0.10.2+54343d8
   Platform: linux/amd64
 ```
 
-## Getting started with argocd rollouts
----------------------
+## Deployments using with argocd rollouts 
 - Document Link:  https://argoproj.github.io/argo-rollouts/getting-started/
 
 ```
