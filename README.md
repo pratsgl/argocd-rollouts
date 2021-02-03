@@ -34,11 +34,11 @@ Features
 ### Rollout
 A Rollout is Kubernetes workload resource which is equivalent to a Kubernetes Deployment object. It is intended to replace a Deployment object in scenarios when more advanced deployment or progressive delivery functionality is needed. A Rollout provides the following features which a Kubernetes Deployment cannot:
 
-    blue-green deployments
-    canary deployments
-    integration with ingress controllers and service meshes for advanced traffic routing
-    integration with metric providers for blue-green & canary analysis
-    automated promotion or rollback based on successful or failed metrics
+* blue-green deployments
+* canary deployments
+* integration with ingress controllers and service meshes for advanced traffic routing
+* integration with metric providers for blue-green & canary analysis
+* automated promotion or rollback based on successful or failed metrics
 
 #### Progressive Delivery
 
