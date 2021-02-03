@@ -61,7 +61,9 @@ Saving to: ‘install.yaml’
 [user@kub-app001 ~]$ ls -ltr
 total 768
 -rw-rw-r--. 1 user user 780040 Jan  8 06:12 install.yaml
-
+```
+## Install argo-rollouts
+```
 [user@kub-app001 ~]$ kubectl apply -n argo-rollouts -f install.yaml
 Warning: apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition
 customresourcedefinition.apiextensions.k8s.io/analysisruns.argoproj.io unchanged
@@ -78,8 +80,8 @@ clusterrolebinding.rbac.authorization.k8s.io/argo-rollouts-clusterrolebinding un
 service/argo-rollouts-metrics unchanged
 deployment.apps/argo-rollouts unchanged
 ```
+#### Following are the resources created in argo-rollouts name space 
 ```
-
 [user@kub-app001 ~]$ kubectl get all -n argo-rollouts
 NAME                                 READY   STATUS    RESTARTS   AGE
 pod/argo-rollouts-6f6b9bd669-nzr44   1/1     Running   0          18m
@@ -116,6 +118,7 @@ Saving to: ‘kubectl-argo-rollouts-linux-amd64’
 [user@kub-app001 ~]$ chmod +x ./kubectl-argo-rollouts-linux-amd64
 [user@kub-app001 ~]$ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 ```
+#### Check if plugin "argo rollouts" works  
 ```
 [user@kub-app001 ~]$ kubectl argo rollouts version
 kubectl-argo-rollouts: v0.10.2+54343d8
@@ -126,6 +129,7 @@ kubectl-argo-rollouts: v0.10.2+54343d8
   Compiler: gc
   Platform: linux/amd64
 ```
+
 ## Getting started with argocd rollouts
 ---------------------
 - Document Link:  https://argoproj.github.io/argo-rollouts/getting-started/
