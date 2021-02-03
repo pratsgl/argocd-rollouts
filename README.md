@@ -98,14 +98,8 @@ NAME                                       DESIRED   CURRENT   READY   AGE
 replicaset.apps/argo-rollouts-6f6b9bd669   1         1         1       18m
 ```
 ### Now install argo-rollouts plugin 
----------------------
-```
-[user@kub-app001 ~]$ curl -LO https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-curl: (56) Received HTTP code 504 from proxy after CONNECT
 
+```
 [user@kub-app001 ~]$ wget  https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64
 --2021-01-08 06:18:43--  https://github-production-release-asset-2e65be.s3.amazonaws.com/158012967/8363d100-406a-11eb-98fd-e4d86ac3b339?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210108%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210108T061843Z&X-Amz-Expires=300&X-Amz-Signature=e641acc1d453fa34e8411f608c12ddc4bc042f49e294aa5a6f0af19a8545cb65&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=158012967&response-content-disposition=attachment%3B%20filename%3Dkubectl-argo-rollouts-linux-amd64&response-content-type=application%2Foctet-stream
 Connecting to lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)|10.164.246.138|:8080... connected.
@@ -116,8 +110,11 @@ Saving to: ‘kubectl-argo-rollouts-linux-amd64’
 100%[===============================================================================================================================================>] 48,541,136  7.51MB/s   in 11s
 
 2021-01-08 06:18:54 (4.15 MB/s) - ‘kubectl-argo-rollouts-linux-amd64’ saved [48541136/48541136]
-
+```
+```
 [user@kub-app001 ~]$ chmod +x ./kubectl-argo-rollouts-linux-amd64
+```
+```
 [user@kub-app001 ~]$ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 ```
 #### Check if plugin "argo rollouts" works  
