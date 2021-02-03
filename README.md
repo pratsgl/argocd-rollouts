@@ -56,7 +56,8 @@ Saving to: ‘install.yaml’
 100%[===============================================================================================================================================>] 780,040     --.-K/s   in 0.02s
 
 2021-01-08 06:12:51 (35.2 MB/s) - ‘install.yaml’ saved [780040/780040]
-
+```
+```
 [user@kub-app001 ~]$ ls -ltr
 total 768
 -rw-rw-r--. 1 user user 780040 Jan  8 06:12 install.yaml
@@ -76,7 +77,8 @@ clusterrole.rbac.authorization.k8s.io/argo-rollouts-clusterrole unchanged
 clusterrolebinding.rbac.authorization.k8s.io/argo-rollouts-clusterrolebinding unchanged
 service/argo-rollouts-metrics unchanged
 deployment.apps/argo-rollouts unchanged
-
+```
+```
 
 [user@kub-app001 ~]$ kubectl get all -n argo-rollouts
 NAME                                 READY   STATUS    RESTARTS   AGE
@@ -113,7 +115,8 @@ Saving to: ‘kubectl-argo-rollouts-linux-amd64’
 
 [user@kub-app001 ~]$ chmod +x ./kubectl-argo-rollouts-linux-amd64
 [user@kub-app001 ~]$ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
-
+```
+```
 [user@kub-app001 ~]$ kubectl argo rollouts version
 kubectl-argo-rollouts: v0.10.2+54343d8
   BuildDate: 2020-12-17T20:46:09Z
@@ -144,7 +147,8 @@ Saving to: ‘rollout.yaml’
 100%[===============================================================================================================================================>] 752         --.-K/s   in 0s
 
 2021-01-08 06:24:38 (36.0 MB/s) - ‘rollout.yaml’ saved [752/752]
-
+```
+```
 [user@kub-app001 kubernetes]$ wget https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 --2021-01-08 06:24:56--  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 Resolving lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)... 10.164.246.138
