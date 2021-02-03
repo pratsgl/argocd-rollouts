@@ -1,5 +1,5 @@
 # Argo Rollouts - Kubernetes Progressive Delivery Controller
-#### What is Argo Rollouts?
+## What is Argo Rollouts?
 ---------------------
 Argo Rollouts is a Kubernetes controller and set of CRDs which provide advanced deployment capabilities such as blue-green, canary, canary analysis, experimentation, and progressive delivery features to Kubernetes.
 
@@ -7,7 +7,7 @@ Argo Rollouts (optionally) integrates with ingress controllers and service meshe
 
 This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
 
-#### Why Argo Rollouts ?
+## Why Argo Rollouts ?
 ---------------------
 Kubernetes Deployments provides the RollingUpdate strategy which provide a basic set of safety guarantees (readiness probes) during an update. However the rolling update strategy faces many limitations:
 
