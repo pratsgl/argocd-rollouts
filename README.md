@@ -158,6 +158,7 @@ kubectl-argo-rollouts: v0.10.2+54343d8
   Compiler: gc
   Platform: linux/amd64
 ```
+#### This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
 
 ## Deployments using with argocd rollouts 
 - Document Link:  https://argoproj.github.io/argo-rollouts/getting-started/
