@@ -1,7 +1,6 @@
 #### This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
 
-## Deployments using with argocd rollouts 
-- Document Link:  https://argoproj.github.io/argo-rollouts/getting-started/
+## Deployments application with Canary-Basic strategy using argocd rollouts 
 
 ```
 [user@kub-app001 ~]$ mkdir -p kubernetes/argocd-rollout-demo
