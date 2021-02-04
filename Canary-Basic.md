@@ -89,6 +89,10 @@ spec:
 
 Run the following command to deploy the initial Rollout and Service:
 ```
+$ ls -ltr
+-rw-rw-r--. 1 user user 178 Jan 11 06:07 service.yaml
+-rw-rw-r--. 1 user user 752 Jan 11 06:07 rollout.yaml
+
 [user@kub-app001 kubernetes]$ kubectl apply -f rollout.yaml
 rollout.argoproj.io/rollouts-demo created
 [user@kub-app001 kubernetes]$ kubectl apply -f service.yaml
