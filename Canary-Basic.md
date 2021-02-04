@@ -1,6 +1,6 @@
-#### This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
+## Deployment of application with Canary-Basic strategy using argocd rollouts 
 
-## Deployments application with Canary-Basic strategy using argocd rollouts 
+#### This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
 
 ```
 [user@kub-app001 ~]$ mkdir -p kubernetes/argocd-rollout-demo
