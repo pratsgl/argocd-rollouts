@@ -6,9 +6,9 @@
 [user@kub-app001 ~]$ mkdir -p kubernetes/argocd-rollout-demo
 [user@kub-app001 ~]$ cd kubernetes/argocd-rollout-demo/
 ```
-Download rollout.yaml & service.yaml files 
+Create rollout.yaml & service.yaml files 
 ```
-[user@kub-app001 kubernetes]$ wget  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
+[user@kub-app001 kubernetes]$ 
 --2021-01-08 06:24:38--  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
 Resolving lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)... 10.164.246.138
 Proxy request sent, awaiting response... 200 OK
@@ -59,18 +59,25 @@ spec:
             memory: 32Mi
             cpu: 5m
 ```
-
+Create service.yaml file
 ```
-[user@kub-app001 kubernetes]$ wget https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
---2021-01-08 06:24:56--  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
-Resolving lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)... 10.164.246.138
-Proxy request sent, awaiting response... 200 OK
-Length: 178 [text/plain]
-Saving to: ‘service.yaml’
-
-100%[===============================================================================================================================================>] 178         --.-K/s   in 0s
-
-2021-01-08 06:24:56 (8.84 MB/s) - ‘service.yaml’ saved [178/178]
+$ cat service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: rollouts-demo
+spec:
+  ports:
+  - port: 80
+    targetPort: http
+    protocol: TCP
+    name: http
+  selector:
+    app: rollouts-demo
+```
+Download link :  
+https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
+https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 ```
 
 ### 1. Deploying a Rollout
