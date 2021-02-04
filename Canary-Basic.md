@@ -64,10 +64,9 @@ spec:
   selector:
     app: rollouts-demo
 ```
-Download link :  
-https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
-https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
-```
+Or you can download in following links :  
+	https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
+	https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 
 ### 1. Deploying a Rollout
 ---------------------
@@ -89,7 +88,6 @@ spec:
 ```      
 
 Run the following command to deploy the initial Rollout and Service:
-
 ```
 [user@kub-app001 kubernetes]$ kubectl apply -f rollout.yaml
 rollout.argoproj.io/rollouts-demo created
