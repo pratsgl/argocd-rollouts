@@ -1,26 +1,15 @@
 ## Deployment of application with Canary-Basic strategy using argocd rollouts 
 
-#### This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
+### This guide will demonstrate various concepts and features of Argo Rollouts by going through deployment, upgrade, promotion, and abortion of a Rollout.
 
 ```
 [user@kub-app001 ~]$ mkdir -p kubernetes/argocd-rollout-demo
 [user@kub-app001 ~]$ cd kubernetes/argocd-rollout-demo/
 ```
 Create rollout.yaml & service.yaml files 
-```
-[user@kub-app001 kubernetes]$ 
---2021-01-08 06:24:38--  https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
-Resolving lab-api-proxy.lab.mycompany.com (lab-api-proxy.lab.mycompany.com)... 10.164.246.138
-Proxy request sent, awaiting response... 200 OK
-Length: 752 [text/plain]
-Saving to: ‘rollout.yaml’
 
-100%[===============================================================================================================================================>] 752         --.-K/s   in 0s
-
-2021-01-08 06:24:38 (36.0 MB/s) - ‘rollout.yaml’ saved [752/752]
+#### rollout.yaml 
 ```
-```
-$ cat rollout.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
@@ -60,8 +49,8 @@ spec:
             cpu: 5m
 ```
 Create service.yaml file
+#### service.yaml 
 ```
-$ cat service.yaml
 apiVersion: v1
 kind: Service
 metadata:
