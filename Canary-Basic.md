@@ -65,8 +65,8 @@ spec:
     app: rollouts-demo
 ```
 Or you can download in following links :  
-	https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
-	https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
+-	https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
+-	https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
 
 ### 1. Deploying a Rollout
 ---------------------
